@@ -21,7 +21,7 @@ jobs:
 
       - name: Setup SSH Key
         run: |
-          mkdir -p $HOME/.ssh
+          mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" | base64 --decode > $HOME/.ssh/id_rsa
           chmod 600 $HOME/.ssh/id_rsa
           ssh-keyscan -H "$SSH_HOST" >> $HOME/.ssh/known_hosts
