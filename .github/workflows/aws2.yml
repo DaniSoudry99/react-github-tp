@@ -32,3 +32,10 @@ jobs:
 
       - name: Cleanup SSH Key
         run: rm -rf ~/.ssh
+
+# Docker Configuration
+
+# Create a docker-compose.yml file at the root of your project
+# Create a Dockerfile at the root of your project
+
+# These files must allow the project to start using the command `docker-compose up`
